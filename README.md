@@ -34,6 +34,7 @@ When you connect to the web-interface it uses dropzone.js on the frontend for th
 You can also upload a file with: 
 
     curl -H 'ContentType: multipart/form-data' -i -X POST -F 'file=@image.jpg' "http://localhost:5001/upload" 
+    curl -H 'ContentType: multipart/form-data' -i -X POST -F "file=@test1.jpg" http://192.168.99.100:5001/upload
 
 This returns the processed image.
 
