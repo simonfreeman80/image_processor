@@ -22,6 +22,10 @@ Grab the weights.  You may have your own.  I used the file from  `pjreddie.com/m
 Build the containers:
 
     docker-compose -f docker-compose.yml -f with-rq-compose.yml build
+    
+##REDIS 
+to flush DB via command line:
+docker exec -it image_processor_redis_1 redis-cli FLUSHALL
 
 ## mode (1)...
 
